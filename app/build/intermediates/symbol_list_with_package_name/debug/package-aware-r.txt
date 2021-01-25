@@ -1512,6 +1512,7 @@ id fixed
 id forever
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
@@ -1526,6 +1527,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id ivPoster
 id labeled
 id largeLabel
 id left
@@ -1591,6 +1593,7 @@ id right
 id right_icon
 id right_side
 id rounded
+id rvMovies
 id save_non_transition_alpha
 id save_overlay_view
 id scale
@@ -1669,6 +1672,8 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tvOverview
+id tvTitle
 id unchecked
 id uniform
 id unlabeled
@@ -1756,6 +1761,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_movie
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

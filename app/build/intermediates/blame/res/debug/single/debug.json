@@ -52,6 +52,10 @@
         "source": "H:\\AndroidStudioProjects\\Flixter\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "H:\\AndroidStudioProjects\\Flixter\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_movie.xml.flat",
+        "source": "H:\\AndroidStudioProjects\\Flixter\\app\\src\\main\\res\\layout\\item_movie.xml"
+    },
+    {
         "merged": "H:\\AndroidStudioProjects\\Flixter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "H:\\AndroidStudioProjects\\Flixter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },

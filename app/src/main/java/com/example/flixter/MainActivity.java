@@ -1,18 +1,23 @@
 package com.example.flixter;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.example.flixter.adapters.MovieAdapter;
 import com.example.flixter.models.Movie;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 import okhttp3.Headers;
@@ -30,6 +35,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        RecyclerView rvMovies = findViewById(R.id.rvMovies);
+
+        // initialize movies here so that creating MovieAdapter object below wont fail, then
+        // just modify the movies variable later on in the code.
+        // adapter will be pointing to this object so we cannot create a new instance, that
+        // will make the adapter point to the wrong object. So the solution is to just modify the same
+        // variable below in the try block movies.addAll(...)
+        movies = new ArrayList<>();
+
+        // Create the adapter
+        MovieAdapter movieAdapter = new MovieAdapter(this, movies);
+
+        // Set the adapter on the recycler view
+        rvMovies.setAdapter(movieAdapter);
+
+        // Set a layout manager on the recycler view
+        rvMovies.setLayoutManager(new LinearLayoutManager(this));
+
 
         // we implemented this class in the build.gradle (:app) file so now we can use it to
         // allow asynchronous processing
@@ -60,7 +83,8 @@ public class MainActivity extends AppCompatActivity {
                     Log.i(TAG, "Results: " + results.toString());
 
                     // initialize the movies array with movies
-                    movies = Movie.fromJsonArray(results);
+                    movies.addAll(Movie.fromJsonArray(results));
+                    movieAdapter.notifyDataSetChanged();
                     Log.i(TAG, "Movies:" + movies.size());
 
 
