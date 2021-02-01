@@ -1586,9 +1586,11 @@ id password_toggle
 id peekHeight
 id percent
 id pin
+id player
 id progress_circular
 id progress_horizontal
 id radio
+id ratingBar
 id right
 id right_icon
 id right_side
@@ -1744,6 +1746,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detail
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item

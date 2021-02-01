@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "H:\\AndroidStudioProjects\\Flixter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-az\\values-az.xml",
+            "outputFile": "H:\\IT-CS_Related\\AndroidStudioProjects\\Flixter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-az\\values-az.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Michael\\.gradle\\caches\\transforms-2\\files-2.1\\d3725febb93896430b7cba50b6c01d93\\core-1.3.0\\res\\values-az\\values-az.xml",
